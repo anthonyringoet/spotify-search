@@ -13,15 +13,16 @@ html(lang="en")
   body
     .row
       div(class="twelve columns")
-        h1.subheader Search Spotify
-        p Search Spotify and find out in which countries you can listen to the tracks.
-        div(class="row")
+        section(class="step-one panel")
+          h1.subheader Search Spotify
+          p Search Spotify and find out in which countries you can listen to the tracks.
+          div(class="search-form row collapse")
+            div(class="nine mobile-three columns")
+              input(type="text", class="search-form-input")
+            div(class="three mobile-one columns")
+              a(class="button expand postfix search-form-btn") Search
+        section(class="row visuallyhidden step-two")
           div(class="three columns")
-            div(class="search-form row collapse")
-              div(class="nine mobile-three columns")
-                input(type="text", class="search-form-input")
-              div(class="three mobile-one columns")
-                a(class="button expand postfix search-form-btn") Search
             div(class="search-results")
           div(class="three columns data-summary")
             div.data-summary-hover
