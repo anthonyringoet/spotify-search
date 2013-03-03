@@ -40,7 +40,7 @@ define(
 
         var results = document.querySelector('.search-results');
         results.classList.remove('visuallyhidden');
-        results.classList.add('animated-delay-two');
+        results.classList.add('animated-delay-one');
         results.classList.add('animated');
 
         // Attach behaviors to it.

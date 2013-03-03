@@ -43,16 +43,17 @@ define(
       this.displayTrackDetails = function(data) {
 
       	var album, territories, artists, output;
-
-      	artists = '<h3>Artists</h3>';
-      	artists += '<ul>';
+        artists = '<h3>Artists</h3>';
+        artists += '<ul>';
         data.data.artists.forEach(function(artist){
-          artists += '<li>'+artist.name+'</li>';
+          artists += '<li><a href="' + artist.href + '">'+artist.name+'</a></li>';
         });
-      	artists += '</ul>';
+        artists += '</ul>';
 
         album = '<h3>Album</h3>';
-        album += '<ul><li>'+data.data.album.name+'</li></ul>';
+        album += '<ul><li><a href="' + data.data.album.href + '">'+data.data.album.name+'</a></li></ul>';
+
+        console.log(data);
 
       	return artists+album;
       };

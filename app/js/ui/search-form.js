@@ -1,10 +1,10 @@
 define(
   [
     'flight/component'
-  ], 
+  ],
 
   function(createComponent){
-    
+
     return createComponent(SearchForm);
 
     function SearchForm() {
