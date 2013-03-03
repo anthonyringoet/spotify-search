@@ -7,6 +7,7 @@ html(lang="en")
 
     link(rel="stylesheet", href="components/foundation/stylesheets/foundation.min.css", rel="stylesheet")
     link(rel="stylesheet", href="components/foundation/custom/foundation.min.css", rel="stylesheet")
+    link(href="app/css/animate-custom.css", type="text/css", rel="stylesheet")
     link(href="app/css/app.css", type="text/css", rel="stylesheet")
 
     script(data-main="app/js/main_2.js", src='components/requirejs/require.js', type="text/javascript")
@@ -15,7 +16,7 @@ html(lang="en")
   body
     .row
       div(class="twelve columns")
-        section(class="step-one panel")
+        section(class="step-one panel animated fadeInUp")
           h1.subheader Search Spotify
           p Search Spotify and find out in which countries you can listen to the tracks.
           div(class="search-form row collapse")
