@@ -34,9 +34,14 @@ define(
       	this.$node.html(output);
 
         // animate
+        var stepTwo = document.querySelector('.step-two');
+        stepTwo.classList.remove('visuallyhidden');
+        stepTwo.classList.add('animated');
+
         var results = document.querySelector('.search-results');
         results.classList.remove('visuallyhidden');
-        results.classList.add('fadeInUp');
+        results.classList.add('animated-delay-two');
+        results.classList.add('animated');
 
         // Attach behaviors to it.
         SearchResultItemActions.attachTo('.search-result-item.track');
