@@ -6,7 +6,7 @@ define(
     , './grid-hover'
     , '../mixins/with-country-events'
     , '../mixins/with-global-config'
-  ], 
+  ],
 
   function(createComponent, d3, countryStore, GridHover, withCountryEvents, withGlobalConfig){
 
@@ -18,7 +18,7 @@ define(
 
       var svg;
 
-  
+
       /**
        * Initialization, listen for events.
        */
@@ -49,7 +49,7 @@ define(
 
       /**
        * Updates the chart data, animated.
-       */    
+       */
       this.updateChart = function(data) {
 
         var self = this;
@@ -65,7 +65,7 @@ define(
             .duration(500)
             .attr('x', function(d, i) { return (i % 6) * 30 })
               .attr('y', function(d, i) {
-                return Math.floor(i / 6) * 20 
+                return Math.floor(i / 6) * 20
               });
 
         // Enter
@@ -81,7 +81,7 @@ define(
               .delay(800)
               .duration(750)
               .attr('y', function(d, i) {
-                return Math.floor(i / 6) * 20 
+                return Math.floor(i / 6) * 20
               })
               .style('fill', self.colors.highlight.darker);
 
@@ -100,7 +100,7 @@ define(
             .remove();
       }
 
-      
+
       /**
        * Setup chart.
        *

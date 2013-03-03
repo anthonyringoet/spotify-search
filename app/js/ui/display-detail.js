@@ -1,7 +1,7 @@
 define(
   [
     'flight/component',
-  ], 
+  ],
 
   function(createComponent){
 
@@ -35,7 +35,7 @@ define(
 
       	//result = embed;
       	result = '';
-      	result += (data.type === 'track') ? this.displayTrackDetails(data) : this.dipslayAlbumDetails(data);
+      	result += (data.type === 'track') ? this.displayTrackDetails(data) : this.displayAlbumDetails(data);
 
       	this.select('dataPlaceholder').html(result);
       }
@@ -54,10 +54,10 @@ define(
         album = '<h3>Album</h3>';
         album += '<ul><li>'+data.data.album.name+'</li></ul>';
 
-      	return artists+album; 
+      	return artists+album;
       };
 
-      this.dipslayAlbumDetails = function(data) {
+      this.displayAlbumDetails = function(data) {
 
        	var output, territories, artists, output;
 
