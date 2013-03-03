@@ -2,7 +2,7 @@ define(
   [
     'flight/component',
     './search-result-item-actions'
-  ], 
+  ],
 
   function(createComponent, SearchResultItemActions){
 
@@ -30,8 +30,13 @@ define(
       	});
 
         var output = '<h3>Tracks</h3><ul>' + results.join('') + '</ul>';
-        
+
       	this.$node.html(output);
+
+        // animate
+        var results = document.querySelector('.search-results');
+        results.classList.remove('visuallyhidden');
+        results.classList.add('fadeInUp');
 
         // Attach behaviors to it.
         SearchResultItemActions.attachTo('.search-result-item.track');

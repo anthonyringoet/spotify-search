@@ -29,15 +29,16 @@ ul li {
   cursor: pointer;
   padding: 5px 10px;
   position: relative;
-  left: -10px; }
+  left: -10px;
+  border-radius: 5px;
+  margin: 2px 0; }
+  .search-result-item:hover {
+    background: rgba(102, 102, 102, 0.5); }
   .search-result-item.selected {
     background-color: #666666;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #515151), color-stop(0.1, #7c7c7c));
     color: #f1f1f1;
-    text-shadow: 0 1px 0 #515151;
-    margin: 2px 0;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
+    text-shadow: 0 1px 0 #515151; }
 
 .button {
   background: #1d7074; }

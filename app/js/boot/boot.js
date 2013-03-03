@@ -9,7 +9,7 @@ define(
     , '../visualization/geo'
     , '../visualization/countries-grid'
     , '../visualization/hover-summary'
-  ], 
+  ],
 
   function(
       createComponent
@@ -22,13 +22,12 @@ define(
     , CountriesGrid
     , HoverSummary
   ) {
-    
+
     return createComponent(Boot);
 
     function Boot() {
-      
+
       this.after('initialize', function(){
-        
         SearchForm.attachTo('.search-form');
         SearchSpotify.attachTo(document);
         DataStore.attachTo(document);
@@ -38,13 +37,12 @@ define(
         CountriesGrid.attachTo('.data-summary-countries-grid');
         HoverSummary.attachTo('.data-summary-hover');
 
-
       });
 
 
 
 
     }
-    
+
 
 });
