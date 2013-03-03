@@ -1,7 +1,7 @@
 define(
   [
     'flight/component'
-  ], 
+  ],
 
   function(createComponent){
 
@@ -23,8 +23,7 @@ define(
        * Display the artists results.
        */
       this.clickAction = function(event, data) {
-        console.log(event);
-        console.log();
+        // console.log(event);
 
         $('.search-result-item').removeClass('selected');
         $('[data-spotifyuri="'+event.target.attributes['data-spotifyuri'].value+'"]').addClass('selected');

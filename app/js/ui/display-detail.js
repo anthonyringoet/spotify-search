@@ -53,7 +53,7 @@ define(
         album = '<h3>Album</h3>';
         album += '<ul><li><a href="' + data.data.album.href + '">'+data.data.album.name+'</a></li></ul>';
 
-        console.log(data);
+        // console.log(data);
 
       	return artists+album;
       };
